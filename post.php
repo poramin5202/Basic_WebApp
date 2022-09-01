@@ -17,7 +17,7 @@
             <td colspan="2" style="background-color: #6CD2FE;">แสดงความคิดเห็น</td>
         </tr>
         <tr>
-            <td><textarea name="txt" id="" cols="50" rows="5"> </textarea></td>
+            <td><textarea name="txt" id="" cols="50" rows="5"style="width:98%"> </textarea></td>
         </tr>
         <tr>
             
