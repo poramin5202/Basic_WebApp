@@ -10,11 +10,20 @@
 <h1 style="text-align: center;"> Webboard God God  </h1> 
     <hr> 
     <div align="center">
-        เข้าสู้ระเบบด้วย<br>
-        Login = <?php echo $_POST["login"]; ?><br>
-        Password = <?php echo $_POST["pwd"]; ?> <br>
+    <?php
+        if($_POST["login"]=="admin" && $_POST["pwd"]=="ad1234" ){
+            echo "ยินดีต้อนรับคุณ admin";
+        }
+        elseif($_POST["login"]=="member" && $_POST["pwd"]=="mem1234" ){
+            echo "ยินดีต้อนรับคุณ member";
+        }else{
+            echo "ชื่อหรือบัญชีไม่ถูกต้อง";
+        }
+    ?>  
     </div>
 
-
+    <div align="center">
+        <a href="index.php"> กลับไปหน้าหลัก</a> 
+    </div>
 </body>
 </html>
