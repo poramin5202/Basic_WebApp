@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION['id'])){
+        header("location:index.php");
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +20,15 @@
     <?php
         if($_POST["login"]=="admin" && $_POST["pwd"]=="ad1234" ){
             echo "ยินดีต้อนรับคุณ admin";
+            $_SESSION['username']='admin';
+            $_SESSION['role']='a';
+            $_SESSION['id']=session_id();
         }
         elseif($_POST["login"]=="member" && $_POST["pwd"]=="mem1234" ){
             echo "ยินดีต้อนรับคุณ member";
+            $_SESSION['username']='member';
+            $_SESSION['role']='m';
+            $_SESSION['id']=session_id();
         }else{
             echo "ชื่อหรือบัญชีไม่ถูกต้อง";
         }
