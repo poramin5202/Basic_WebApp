@@ -25,7 +25,7 @@
         <option value="general">เรื่องทั่วไป</option>
         <option value="study">เรื่องเรียน</option>
     </select>
-    <a href="login.php" style="float: right;">เข้าสู่ระบบ</a>
+    <a href="login.php" style="float: right;">เข้าสู่ระบบบบบบบบ</a>
     <ul>
         <?php
            for($i=1;$i<=10;$i++){
